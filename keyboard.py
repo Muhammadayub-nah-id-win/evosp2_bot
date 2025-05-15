@@ -10,7 +10,7 @@ from messages import messages
 
 def telegram_web_app(lang):
     # url = "https://evos.uz/ru/" if lang == "ru" else "https://evos.uz/"
-    url = "https://bunyodnaimov.github.io/p2-evos-test-bot/"
+    url = "https://muhammadayub-nah-id-win.github.io/evosp2_bot/"
     web_app = WebAppInfo(url=url)
     return web_app
 
