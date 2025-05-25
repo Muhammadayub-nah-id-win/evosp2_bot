@@ -123,7 +123,7 @@ let item5 = "";
 let n_count5 = 0;
 rbtn5.addEventListener("click", function () {
     if (n_count5 > 0) {
-        count3.innerText = n_count5 -= 1;
+        count5.innerText = n_count5 -= 1;
     }
 
     count5.style.display = "inline-block";
@@ -134,8 +134,8 @@ rbtn5.addEventListener("click", function () {
 });
 
 abtn5.addEventListener("click", function () {
-    count4.innerText = n_count5 += 1;
-    count4.style.display = "inline-block";
+    count5.innerText = n_count5 += 1;
+    count5.style.display = "inline-block";
     item5 = "ID_5/" + count5innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -150,11 +150,11 @@ let item6 = "";
 let n_count6 = 0;
 rbtn5.addEventListener("click", function () {
     if (n_count6 > 0) {
-        count3.innerText = n_count6 -= 1;
+        count6.innerText = n_count6 -= 1;
     }
 
     count6.style.display = "inline-block";
-    item6 = "ID_5/" + count5.innerText;
+    item6 = "ID_6/" + count6.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -164,7 +164,7 @@ rbtn5.addEventListener("click", function () {
 abtn6.addEventListener("click", function () {
     count6.innerText = n_count6 += 1;
     count6.style.display = "inline-block";
-    item6 = "ID_5/" + count6innerText;
+    item6 = "ID_6/" + count6innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -178,12 +178,12 @@ abtn7 = document.getElementById("abtn7");
 let item7 = "";
 let n_count7 = 0;
 rbtn7.addEventListener("click", function () {
-    if (n_count6 > 0) {
+    if (n_count7 > 0) {
         count7.innerText = n_count7 -= 1;
     }
 
-    count5.style.display = "inline-block";
-    item5 = "ID_7/" + count7.innerText;
+    count7.style.display = "inline-block";
+    item7 = "ID_7/" + count7.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -201,7 +201,7 @@ abtn7.addEventListener("click", function () {
 // ------------------8--------------------
 
 count8 = document.getElementById("count8");
-rbtn8= document.getElementById("rbtn8");
+rbtn8 = document.getElementById("rbtn8");
 abtn8 = document.getElementById("abtn8");
 let item8 = "";
 let n_count8 = 0;
@@ -211,7 +211,7 @@ rbtn8.addEventListener("click", function () {
     }
 
     count8.style.display = "inline-block";
-    item8 = "ID_8/" + count8.innerText;
+    item8 = "ID_8/" + count7.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -224,8 +224,10 @@ abtn8.addEventListener("click", function () {
     item8 = "ID_8/" + count8innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
+});
+
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + item5 + "|" + item6 + "|" + item7 + "|" + item8 + "|"
+    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + item5 + "|" + item6 + "|" + item7 + "|" + item8
     tg.sendData(data);
 });
