@@ -148,7 +148,7 @@ rbtn6 = document.getElementById("rbtn6");
 abtn6 = document.getElementById("abtn6");
 let item6 = "";
 let n_count6 = 0;
-rbtn5.addEventListener("click", function () {
+rbtn6.addEventListener("click", function () {
     if (n_count6 > 0) {
         count6.innerText = n_count6 -= 1;
     }
@@ -211,7 +211,7 @@ rbtn8.addEventListener("click", function () {
     }
 
     count8.style.display = "inline-block";
-    item8 = "ID_8/" + count7.innerText;
+    item8 = "ID_8/" + count8.innerText;
 
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
