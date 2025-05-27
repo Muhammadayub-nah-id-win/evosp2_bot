@@ -27,14 +27,7 @@ async def get_jobs(message: Message):
 
 
 @router.message(F.text.in_(["🏢 О кампании", "🏢 Kampaniya haqida"]))
-async def about_company_handlears(message: Message):
+async def about_company(message: Message):
     lang = database.get_user_lang(message.from_user.id)
     img = FSInputFile(os.path.join(os.path.dirname(__file__), "images", "evos.png"))
     await message.answer(text=info_company[lang]["about_company"])
-
-
-@router.message(F.text == "⬅️Ortga")
-async def ortga(message: Message):
-    text = "Siz bosh sahifaga qayttingiz!"
-    lang = database.get_user_lang(message.from_user.id)
-    await message.answer(text=text, reply_markup=start_buttons(lang))
