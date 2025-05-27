@@ -27,13 +27,15 @@ async def get_jobs(message: Message):
 
 @router.message(F.text.in_(["🏢 О кампании", "🏢 Kampaniya haqida"]))
 async def about_company_handlears(message: Message):
+    lang = database.get_user_lang(message.from_user.id)
     img = FSInputFile(os.path.join(os.path.dirname(__file__), "images", "evos.png"))
     text= ("Kompaniyamizning birinchi filiali 2006 yilda ochilgan bo’lib\n"
            "shu kungacha muvaffaqiyatli faoliyat yuritib kelmoqdaligini bilarmidingiz?\n"
            "15 yil davomida kompaniya avtobus bekatidagi kichik ovqatlanish joyidan zamonaviy\n"
            "kengaytirilgan tarmoqqa aylandi, u bugungi kunda O‘zbekiston bo‘ylab 65 dan ortiq restoranlarni\n"
            "o‘zining eng tezkor yetkazib berish xizmatini, zamonaviy IT-infratuzilmasini va 2000 dan ortiq xodimlarni o‘z ichiga oladi.!")
-    await message.answer_photo(photo=img, caption=text)
+    await message.answer(text=job_info[lang]["job_position"])
+
 
 @router.message(F.text == "⬅️Ortga")
 async def ortga(message: Message):
