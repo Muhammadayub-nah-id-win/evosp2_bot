@@ -40,6 +40,7 @@ async def get_web_app_data(message: Message):
             product = products.get(p_id)
             product["count"] = int(p_count)
             result.append(product)
+    print(result)
     await bot.send_invoice(
         chat_id=message.chat.id,
         title="To'lov",
