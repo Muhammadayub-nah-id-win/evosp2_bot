@@ -33,7 +33,7 @@ async def about_company_handlears(message: Message):
            "15 yil davomida kompaniya avtobus bekatidagi kichik ovqatlanish joyidan zamonaviy\n"
            "kengaytirilgan tarmoqqa aylandi, u bugungi kunda O‘zbekiston bo‘ylab 65 dan ortiq restoranlarni\n"
            "o‘zining eng tezkor yetkazib berish xizmatini, zamonaviy IT-infratuzilmasini va 2000 dan ortiq xodimlarni o‘z ichiga oladi.!")
-
+    await message.answer_photo(photo=img, caption=text)
 
 @router.message(F.text == "⬅️Ortga")
 async def ortga(message: Message):
