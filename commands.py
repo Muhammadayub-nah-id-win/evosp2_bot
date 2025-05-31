@@ -4,7 +4,7 @@ from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message, FSInputFile
 from database import database
-from keyboard import start_buttons
+from keyboards import start_buttons
 from messages import messages
 
 router = Router()

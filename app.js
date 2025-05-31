@@ -221,7 +221,7 @@ rbtn8.addEventListener("click", function () {
 abtn8.addEventListener("click", function () {
     count8.innerText = n_count8 += 1;
     count8.style.display = "inline-block";
-    item8 = "ID_8/" + count8innerText;
+    item8 = "ID_8/" + count8.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
