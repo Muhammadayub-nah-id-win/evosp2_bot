@@ -5,7 +5,7 @@ from aiogram.types import Message, CallbackQuery, LabeledPrice, FSInputFile
 from database import database
 from keyboards import select_language, start_buttons, get_branches
 from messages import messages, job_info, info_company, info_branches, info_news, info_contacts, info_tashkent, \
-    info_office
+    info_office, info_show_nearby_branches
 
 router = Router()
 
@@ -78,8 +78,8 @@ async def head_office(message: Message):
     img = FSInputFile(os.path.join(os.path.dirname(__file__), "images", "img_20.png"))
     await message.answer_photo(photo=img, caption=info_office[lang]["head_office"])
 
-@router.message(F.text.in_(["Yaqin filialarni korsatish!", "Отправить локации!"]))
-async def send_location(message: Message):
+@router.message(F.text.in_(["Yaqin filialarni korsatish", "Показать ближайшие филиалы!"]))
+async def show_nearby_branches(message: Message):
     lang = database.get_user_lang(message.from_user.id)
-    img = FSInputFile(os.path.join(os.path.dirname(__file__), "images", "img_20.png"))
-    await message.answer_photo(photo=img, caption=info_office[lang]["send_location"])
+    img = FSInputFile(os.path.join(os.path.dirname(__file__), "images", "img_21.png"))
+    await message.answer_photo(photo=img, caption=info_show_nearby_branches[lang]["show_nearby_branches"])

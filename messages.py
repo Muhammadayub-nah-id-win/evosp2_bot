@@ -112,8 +112,11 @@ info_office = {
 }
 
 
-info_location = {
+info_show_nearby_branches = {
     "uz": {
-        ""
+        "show_nearby_branches": "Biz ishlayotgan eng yaqin joyda filialimiz bor!"
+    },
+    "ru": {
+        "show_nearby_branches": "У нас есть в ближаюшим месте есть наш филиал которым работаем!"
     }
 }
