@@ -67,7 +67,6 @@ async def successful_payment(msg: Message):
 
 
 
-
 async def main() -> None:
     # bot = Bot(token=TOKEN, session=session)
     await bot.set_my_commands(bot_commands)
@@ -76,4 +75,4 @@ async def main() -> None:
 
 if __name__ == "__main__":
     print("Starting bot...")
-    asyncio.run(main())
+    asyncio.run(main()) 

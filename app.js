@@ -1,13 +1,13 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 
-tg.MainButton.textColor = "#FFFFFF"
-tg.MainButton.color = "#FC3005"
+tg.MainButton.textColor = "#FFFFFF";
+tg.MainButton.color = "#FC3005";
 
 // -----------------------1--------------------------
 
-let item1 = ""
-let n_count1 = 0
+let item1 = "";
+let n_count1 = 0;
 
 
 let count1 = document.getElementById("count1");
