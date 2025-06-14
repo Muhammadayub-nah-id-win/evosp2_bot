@@ -1,13 +1,13 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 
-tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color = "#FC3005";
+tg.MainButton.textColor = "#FFFFFF"
+tg.MainButton.color = "#FC3005"
 
 // -----------------------1--------------------------
 
-let item1 = "";
-let n_count1 = 0;
+let item1 = ""
+let n_count1 = 0
 
 
 let count1 = document.getElementById("count1");
@@ -152,19 +152,17 @@ rbtn6.addEventListener("click", function () {
     if (n_count6 > 0) {
         count6.innerText = n_count6 -= 1;
     }
-
+});
     count6.style.display = "inline-block";
     item6 = "ID_6/" + count6.innerText;
-
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 
-});
 
 abtn6.addEventListener("click", function () {
     count6.innerText = n_count6 += 1;
     count6.style.display = "inline-block";
-    item6 = "ID_6/" + count6innerText;
+    item6 = "ID_6/" + count6.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -218,35 +216,10 @@ rbtn8.addEventListener("click", function () {
 
 });
 
-abtn9.addEventListener("click", function () {
-    count9.innerText = n_count9 += 1;
-    count9.style.display = "inline-block";
-    item9 = "ID_9/" + count9.innerText;
-    tg.MainButton.setText("Оплата");
-    tg.MainButton.show();
-});
-count9 = document.getElementById("count9");
-rbtn9 = document.getElementById("rbtn9");
-abtn9 = document.getElementById("abtn9");
-let item9 = "";
-let n_count9 = 0;
-rbtn9.addEventListener("click", function () {
-    if (n_count9 > 0) {
-        count9.innerText = n_count9 -= 1;
-    }
-
-    count9.style.display = "inline-block";
-    item9 = "ID_9/" + count9.innerText;
-
-    tg.MainButton.setText("Оплата");
-    tg.MainButton.show();
-
-});
-
-abtn9.addEventListener("click", function () {
-    count9.innerText = n_count9 += 1;
-    count9.style.display = "inline-block";
-    item9 = "ID_9/" + count9.innerText;
+abtn8.addEventListener("click", function () {
+    count8.innerText = n_count8 += 1;
+    count8.style.display = "inline-block";
+    item8 = "ID_8/" + count8.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
