@@ -218,10 +218,35 @@ rbtn8.addEventListener("click", function () {
 
 });
 
-abtn8.addEventListener("click", function () {
-    count8.innerText = n_count8 += 1;
-    count8.style.display = "inline-block";
-    item8 = "ID_8/" + count8.innerText;
+abtn9.addEventListener("click", function () {
+    count9.innerText = n_count9 += 1;
+    count9.style.display = "inline-block";
+    item9 = "ID_9/" + count9.innerText;
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+});
+count9 = document.getElementById("count9");
+rbtn9 = document.getElementById("rbtn9");
+abtn9 = document.getElementById("abtn9");
+let item9 = "";
+let n_count9 = 0;
+rbtn9.addEventListener("click", function () {
+    if (n_count9 > 0) {
+        count9.innerText = n_count9 -= 1;
+    }
+
+    count9.style.display = "inline-block";
+    item9 = "ID_9/" + count9.innerText;
+
+    tg.MainButton.setText("Оплата");
+    tg.MainButton.show();
+
+});
+
+abtn9.addEventListener("click", function () {
+    count9.innerText = n_count9 += 1;
+    count9.style.display = "inline-block";
+    item9 = "ID_9/" + count9.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
