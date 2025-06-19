@@ -518,7 +518,6 @@ pbtn6.addEventListener("click", function () {
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-    data = item1 + "|" + item2 + "|" + item3 + "|" + item4 + "|" + item5 + "|" + item6 + "|" + item7 + "|" + item8 + "|" + item9 +"|" + itemb + "|" + itemd + "|" + itema + "|" + itemc + "|" + item0 +
-    "|" + num1 + num2 + num3 + num4 + num5 + num6
+    data = item1 + "|" + item2 + "|" + item3;
     tg.sendData(data);
 });
