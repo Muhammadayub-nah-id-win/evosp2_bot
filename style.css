@@ -7,17 +7,20 @@ body {
 }
 
 .container {
-	max-width: 400px;
+	max-width: 468px;
 }
 
 .inner {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 240px 240px 240px;
+	grid-template-rows: 220px 240px 240px;
+	border: solid 2px black;
+	background: rgba(246, 243, 243, 0.94);
+	border-radius: 10px;
 }
 
 .img {
-	width: 100px;
+	width: 93px;
 }
 
 .item {
@@ -62,4 +65,67 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 240px 240px 240px;
+	background: rgba(246, 243, 243, 0.94);
+	border-radius: 10px;
+	border: solid 2px black;
+
+}
+.count1{
+	width: 50px;
+}
+.name{
+	width: 190px;
+	height: 200px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.main{
+	width: 190px;
+	height: 200px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.main2{
+	width: 190px;
+	height: 220px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.main3{
+	width: 190px;
+	height: 220px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.main4{
+	width: 190px;
+	height: 220px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.main5{
+	width: 190px;
+	height: 220px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.main6{
+	width: 190px;
+	height: 220px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.main7{
+	width: 190px;
+	height: 220px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+.inner3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 240px 240px 240px;
+	background: rgba(246, 243, 243, 0.94);
+	border-radius: 10px;
+	border: solid 2px black;
 }
