@@ -8,6 +8,7 @@ body {
 
 .container {
 	max-width: 430px;
+	background: rgba(246, 243, 243, 0.94);
 }
 
 .inner {
@@ -74,50 +75,42 @@ body {
 }
 .name{
 	width: 190px;
-	height: 200px;
-	padding: 10px 20px;
+	height: 220px;
 	border-radius: 10px;
 }
 .main{
 	width: 190px;
 	height: 200px;
-	padding: 10px 20px;
 	border-radius: 10px;
 }
 .main2{
 	width: 190px;
 	height: 220px;
-	padding: 10px 20px;
 	border-radius: 10px;
 }
 .main3{
 	width: 190px;
 	height: 220px;
-	padding: 10px 20px;
 	border-radius: 10px;
 }
 .main4{
 	width: 190px;
 	height: 220px;
-	padding: 10px 20px;
 	border-radius: 10px;
 }
 .main5{
 	width: 190px;
 	height: 220px;
-	padding: 10px 20px;
 	border-radius: 10px;
 }
 .main6{
 	width: 190px;
 	height: 220px;
-	padding: 10px 20px;
 	border-radius: 10px;
 }
 .main7{
 	width: 190px;
 	height: 220px;
-	padding: 10px 20px;
 	border-radius: 10px;
 }
 .inner3 {
