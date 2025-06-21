@@ -8,16 +8,13 @@ body {
 
 .container {
 	max-width: 430px;
-	background: rgba(246, 243, 243, 0.94);
 }
 
 .inner {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 240px 240px 240px;
-	background: rgba(246, 243, 243, 0.94);
 	border-radius: 10px;
-	border: solid 2px black;
 }
 
 .img {
@@ -66,9 +63,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 240px 240px 240px;
-	background: rgba(246, 243, 243, 0.94);
 	border-radius: 10px;
-	border: solid 2px black;
 }
 .count1{
 	width: 50px;
@@ -117,7 +112,5 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 240px 240px 240px;
-	background: rgba(246, 243, 243, 0.94);
 	border-radius: 10px;
-	border: solid 2px black;
 }
