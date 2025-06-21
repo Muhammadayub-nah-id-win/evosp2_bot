@@ -41,13 +41,3 @@ def select_language():
     return buttons
 
 
-def get_branches(lang):
-    buttons = ReplyKeyboardMarkup(keyboard=[
-        [KeyboardButton(text=f"{messages[lang]['head_office']}"),
-         KeyboardButton(text=f"{messages[lang]['tashkent_sh']}"),
-         KeyboardButton(text=f"{messages[lang]['show_nearby_branches']}")],
-        [KeyboardButton(text=f"{messages[lang]['back']}")]
-    ], resize_keyboard=True)
-    return buttons
-
-

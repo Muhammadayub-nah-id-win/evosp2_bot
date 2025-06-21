@@ -7,9 +7,10 @@ messages = {
         "job_positions": "Bo'sh ish o'rinlari",
         "menu": "Menyu",
         "news": "Yangiliklar",
-        "contacts": "Kantaktlar/Manzil",
+        "contacts": "Kantaktlar",
         "language": "🇺🇿/🇷🇺 Til",
         "select_lang": "Tilni tanlang!",
+        "selected_lang": "Siz o'zbekchani tanladiz",
         "send_location": "Lokatsiya yuborish!",
         "head_office": "Bosh ofis!",
         "tashkent_sh": "Toshkent sh",
@@ -22,9 +23,10 @@ messages = {
         "job_positions": "Вакансии",
         "menu": "Меню",
         "news": "Новости",
-        "contacts": "Контакты/Адрес",
+        "contacts": "Контакты",
         "language": "🇺🇿/🇷🇺 Язык",
         "select_lang": "Выберите язык!",
+        "selected_lang": "Вы выбрали русский язык",
         "welcome_text": "Добро пожаловать",
         "send_location": "Отправить локации",
         "head_office": "Главный офис!",
@@ -64,30 +66,46 @@ job_info = {
 
 info_branches = {
     "uz": {
-        "branches": "Bizning filialimiz nafaqat Ko‘kchada, masalan, tog‘da va ko‘p joylarda ochganmiz!"
+        "branches": "Manzil   Toshkent sh., Yunusobod tumani, 5-kvartira, 11a-uy",
+        "branches2": "Manzil   Toshkent sh., Chilonzor tumani, Farhod va Qatartol koʻchalari chorrahasi, 10-bino."
     },
     "ru": {
-        "branches": "У нас не только в Кукче есть филиал по всему есть например мы открыли в горах и в многих местах!",
+        "branches": "Адрес    г. Ташкент, Юнусабадский район, квартал 5, дом 11а",
+        "branches2": "Адрес    Город Ташкент, Чиланзарский район, пересечение улиц Фарход и Катартол, дом 10."
 
     }
 }
 
 info_news = {
     "uz": {
-        "news": "Bizda yangilik bor, bolalar uchun xayr-ehson qilib, ularni xursand qilmoqchimiz!"
+        "news1": "EVOS yangi Lanchbokslar turkumini taqdim etmoqda — faqat restoranlarda va olib ketish uchun",
+        "news2": "Table Service yangi xizmati: Sizning qulayligingiz - bizning ustuvor vazifamiz!"
     },
     "ru": {
-        "news": "у нас есть новости мы хотим пожертвовать денег ради детишек и порадовать их!",
-
+        "news1": "EVOS представляет новую линейку ланч-боксов — только для ресторанов и еды на вынос",
+        "news2": "Новый сервис обслуживания столов: Ваш комфорт — наш приоритет!"
     }
 }
 
 info_contacts = {
     "uz": {
-        "contacts": "Bizda fillialar kop masalan Alpomish kochasi, Beruniy kochasi da ham bor!"
+        "contacts": "Call-центр +998 71-203-12-12 +998 71-203-55-55 Yetkazib berish telefon raqamlar: +998 71-203-12-12 (единый номер доставки) Ofis manzili:\n"
+                    "Toshkent sh., 100066, Chilonzor tumani, Furqat boshi berk ko‘chasi, 175-uy.\n"
+                    "Ish vaqti: 9:00 - 18:00, Dam olish kunlari: shanba, yakshanba\n"
+                    "Email:\n"
+                    "HR – worka@evos.uz\n"
+                    "Marketing – marketing@evos.uz\n"
+                    "Bizning bot orqali yetkazib berishga buyurtma berishingiz mumkin: https://t.me/evosdeliverybot."
+
     },
     "ru": {
-        "contacts": "У нас много филиалов, например на улице Алпомыша и улице Беруния!",
+        "contacts": "Колл-центр +998 71-203-12-12 +998 71-203-55-55 Телефоны доставки: +998 71-203-12-12 (единый номер доставки) Адрес офиса:\n"
+                    "Ташкент, 100066, Чиланзарский район, ул. Фуркат Баши Берк, 175.\n"
+                    "Время работы: 9:00 - 18:00, Выходные: суббота, воскресенье\n"
+                    "Электронная почта:\n"
+                    "HR – worka@evos.uz\n"
+                    "Маркетинг – marketing@evos.uz\n"
+                    "Вы можете заказать доставку через нашего бота: https://t.me/evosdeliverybot.",
 
     }
 }
@@ -120,3 +138,4 @@ info_show_nearby_branches = {
         "show_nearby_branches": "У нас есть в ближаюшим месте есть наш филиал которым работаем!"
     }
 }
+
