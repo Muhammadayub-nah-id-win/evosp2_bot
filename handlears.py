@@ -19,7 +19,7 @@ async def get_language(message: Message):
 async def set_language(callback_query: CallbackQuery):
     lang = callback_query.data
     database.set_user_lang(telegram_id=callback_query.from_user.id, lang=lang)
-    await messages.answer(messages[lang]['selected_lang'], replay_markup=select_language())
+    await callback_query.message.answer(messages[lang]['selected_lang'], replay_markup=select_language())
 
 
 
