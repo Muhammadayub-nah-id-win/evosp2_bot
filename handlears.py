@@ -13,7 +13,7 @@ router = Router()
 @router.message(F.text.in_(["🇺🇿/🇷🇺 Til", "🇺🇿/🇷🇺 Язык"]))
 async def get_language(message: Message):
     lang = database.get_user_lang(message.from_user.id)
-    await message.answer(messages[lang]['select_lang'], reply_markup=select_language())
+    await message.answer(messages[lang]['select_lang'], reply_markup=start_buttons(lang))
 
 @router.callback_query(F.data.in_(["uz", "ru"]))
 async def set_language(callback_query: CallbackQuery):
