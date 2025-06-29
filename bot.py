@@ -10,16 +10,17 @@ from dotenv import load_dotenv
 from menu import bot_commands
 from products import products
 
-# from aiogram.client.session.aiohttp import AiohttpSession
+from aiogram.client.session.aiohttp import AiohttpSession
+session = AiohttpSession(proxy="http://proxy.server:3128")
+
 load_dotenv()
 
 
 
 TOKEN = getenv("BOT_TOKEN")
 PROVIDER_TOKEN = getenv("PROVIDER_TOKEN")
-bot = Bot(token=TOKEN)
-
-# session = AiohttpSession(proxy="http://proxy.server:3128")
+# bot = Bot(token=TOKEN)
+bot = Bot(token=TOKEN, session=session)
 
 dp = Dispatcher()
 
@@ -68,7 +69,6 @@ async def successful_payment(msg: Message):
 
 
 async def main() -> None:
-    # bot = Bot(token=TOKEN, session=session)
     await bot.set_my_commands(bot_commands)
     await dp.start_polling(bot)
 
