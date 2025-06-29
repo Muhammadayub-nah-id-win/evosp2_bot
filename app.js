@@ -388,9 +388,9 @@ abtnd.addEventListener("click", function () {
 let lom1 = document.getElementById("lom1");
 let pbtn1 = document.getElementById("pbtn1");
 let adbtn1 = document.getElementById("adbtn1");
-
+lom1_count = 0
 adbtn1.addEventListener("click", function () {
-    lom1.innerText = n_lom1 += 1;
+    lom1.innerText = lom1_count += 1;
     lom1.style.display = "";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -399,7 +399,7 @@ adbtn1.addEventListener("click", function () {
 });
 pbtn1.addEventListener("click", function () {
     if (n_lom1 > 0) {
-        lom1.innerText = n_lom1 -= 1;
+        lom1.innerText = lom1_count -= 1;
     }
     lom1.style.display = "";
     num1 = "ID_1/" + lom1.innerText;
@@ -410,9 +410,9 @@ pbtn1.addEventListener("click", function () {
 let lom2 = document.getElementById("lom2");
 let pbtn2 = document.getElementById("pbtn2");
 let adbtn2 = document.getElementById("adbtn2");
-
+lom2_count = 0
 adbtn2.addEventListener("click", function () {
-    lom2.innerText = n_lom2 += 1;
+    lom2.innerText = lom2_count += 1;
     lom2.style.display = "";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -420,11 +420,11 @@ adbtn2.addEventListener("click", function () {
 
 });
 pbtn2.addEventListener("click", function () {
-    if (n_lom2 > 0) {
-        lom2.innerText = n_lom2 -= 1;
+    if (lom2_count > 0) {
+        lom2.innerText = lom2_count -= 1;
     }
     lom2.style.display = "";
-    num2 = "ID_2/" + lom2.innerText;
+    num2 = "ID_2/" + lom2_count.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -432,9 +432,9 @@ pbtn2.addEventListener("click", function () {
 let lom3 = document.getElementById("lom3");
 let pbtn3 = document.getElementById("pbtn3");
 let adbtn3 = document.getElementById("adbtn3");
-
+lom3_count = 0
 adbtn3.addEventListener("click", function () {
-    lom3.innerText = n_lom3 += 1;
+    lom3.innerText = lom3_count += 1;
     lom3.style.display = "";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
@@ -442,11 +442,11 @@ adbtn3.addEventListener("click", function () {
 
 });
 pbtn3.addEventListener("click", function () {
-    if (n_lom3 > 0) {
-        lom3.innerText = n_lom3 -= 1;
+    if (lom3_count > 0) {
+        lom3.innerText = lom3_count -= 1;
     }
     lom3.style.display = "";
-    num3 = "ID_3/" + lom3.innerText;
+    num3 = "ID_3/" + lom3_count.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -454,21 +454,21 @@ pbtn3.addEventListener("click", function () {
 let lom4 = document.getElementById("lom4");
 let pbtn4 = document.getElementById("pbtn4");
 let adbtn4 = document.getElementById("adbtn4");
-
+lom4_count = 0
 adbtn4.addEventListener("click", function () {
-    lom4.innerText = n_lom4 += 1;
+    lom4.innerText = lom4_count += 1;
     lom4.style.display = "";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
-    num4 = "ID_4/" + count4.innerText;
+    num4 = "ID_4/" + lom4_count.innerText;
 
 });
 pbtn4.addEventListener("click", function () {
-    if (n_lom4 > 0) {
-        lom4.innerText = n_lom4 -= 1;
+    if (lom4_count > 0) {
+        lom4.innerText = lom4_count -= 1;
     }
     lom4.style.display = "";
-    num4 = "ID_4/" + lom4.innerText;
+    num4 = "ID_4/" + lom4_count.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -476,21 +476,21 @@ pbtn4.addEventListener("click", function () {
 let lom5 = document.getElementById("lom5");
 let pbtn5 = document.getElementById("pbtn5");
 let adbtn5 = document.getElementById("adbtn5");
-
+lom5_count = 0
 adbtn5.addEventListener("click", function () {
-    lom5.innerText = n_lom5 += 1;
+    lom5.innerText = lom5_count += 1;
     lom5.style.display = "";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
-    num5 = "ID_5/" + count5.innerText;
+    num5 = "ID_5/" + lom5_count.innerText;
 
 });
 pbtn5.addEventListener("click", function () {
-    if (n_lom5 > 0) {
-        lom5.innerText = n_lom5 -= 1;
+    if (lom5_count > 0) {
+        lom5.innerText = lom5_count -= 1;
     }
     lom5.style.display = "";
-    num5 = "ID_5/" + lom5.innerText;
+    num5 = "ID_5/" + lom5_count.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
@@ -498,21 +498,21 @@ pbtn5.addEventListener("click", function () {
 let lom6 = document.getElementById("lom6");
 let pbtn6 = document.getElementById("pbtn6");
 let adbtn6 = document.getElementById("adbtn6");
-
+lom6_count = 0
 adbtn6.addEventListener("click", function () {
-    lom6.innerText = n_lom6 += 1;
+    lom6.innerText = lom6_count += 1;
     lom6.style.display = "";
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
-    num6 = "ID_6/" + count6.innerText;
+    num6 = "ID_6/" + lom6_count.innerText;
 
 });
 pbtn6.addEventListener("click", function () {
-    if (n_lom6 > 0) {
-        lom6.innerText = n_lom6 -= 1;
+    if (lom6_count > 0) {
+        lom6.innerText = lom6_count -= 1;
     }
     lom6.style.display = "";
-    num6 = "ID_6/" + lom6.innerText;
+    num6 = "ID_6/" + lom6_count.innerText;
     tg.MainButton.setText("Оплата");
     tg.MainButton.show();
 });
